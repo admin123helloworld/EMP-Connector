@@ -1,0 +1,16 @@
+<apex:page standardController="Account" extensions="GooglePractise_cx">
+  <apex:form >
+      <apex:pageBlock title="Account">
+          <apex:pageBlockSection title="Account Record">
+  <apex:outputPanel >          Total Records={!totalRecords}     </apex:outputPanel><br/ >
+  
+                      <apex:pageBlockTable value="{!acclist}" var="objacc">
+                          <apex:column value="{!objacc.Name}"/>
+                          <apex:column value="{!objacc.Type}"/>
+                          <apex:column value="{!objacc.Rating}"/>
+                          <apex:column value="{!objacc.Sic}"/>
+                      </apex:pageBlockTable>       
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

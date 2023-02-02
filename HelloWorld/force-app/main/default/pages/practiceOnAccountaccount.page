@@ -1,0 +1,24 @@
+<apex:page standardController="Account" extensions="practiceOnAccountaccount_cx">
+     <apex:form >
+    <apex:pageBlock title="Account">
+        
+         <apex:pageBlockButtons >
+               <apex:commandButton value="Save" action="{!Save}"/>
+               <apex:commandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageBlockButtons> 
+              <apex:pageBlockSection title="Account Record">
+            <apex:outputPanel >
+            
+          <apex:outputPanel >      Total Records={!totalRecords}                            </apex:outputPanel> 
+                           <apex:pageBlockTable value="{!acclist}" var="objacc">
+                               <apex:column value="{!objacc.Name}"/>
+                               <apex:column value="{!objacc.Type}"/>
+                               <apex:column value="{!objacc.Rating}"/>
+                               <apex:column value="{!objacc.Sic}"/>
+                           </apex:pageBlockTable>
+                           
+           </apex:outputPanel>                                              
+         </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

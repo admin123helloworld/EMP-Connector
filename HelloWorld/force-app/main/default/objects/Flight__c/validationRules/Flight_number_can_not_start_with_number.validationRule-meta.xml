@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flight_number_can_not_start_with_number</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( REGEX( Flight_Number__c ,&apos;((([A-Z]{2})\\d{4}))&apos;))</errorConditionFormula>
+    <errorDisplayField>Flight_Number__c</errorDisplayField>
+    <errorMessage>Flight number should be in standard format</errorMessage>
+</ValidationRule>

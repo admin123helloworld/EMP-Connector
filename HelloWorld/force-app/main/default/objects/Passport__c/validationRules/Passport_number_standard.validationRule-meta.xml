@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Passport_number_standard</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( REGEX(  Passport_No__c , &quot;(([A-Z]{1})\\d{7})&quot;))</errorConditionFormula>
+    <errorDisplayField>Passport_No__c</errorDisplayField>
+    <errorMessage>Passport number should be in standard format</errorMessage>
+</ValidationRule>

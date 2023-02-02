@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAN_and_Aadhar_is_req_in_req_doc_list</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+
+ NOT(INCLUDES( Required_doc_list__c ,&apos;PAN Card&apos;)),
+ NOT(INCLUDES( Required_doc_list__c ,&apos;Aadhar card&apos;)) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Required_doc_list__c</errorDisplayField>
+    <errorMessage>PAN and Aadhar card is req in req doc list</errorMessage>
+</ValidationRule>

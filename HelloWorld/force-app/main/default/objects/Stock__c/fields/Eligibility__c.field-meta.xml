@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligibility__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Applicant_type__c = &apos;Major&apos;,
+
+ IMAGE(&apos;https://cocacola-3b-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0155j0000008yLb&amp;oid=00D5j0000016Jc9&amp;lastMod=1634288642000&apos;,&apos;&apos;,20,20),
+
+ IMAGE(&apos;https://cocacola-3b-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0155j0000008yLg&amp;oid=00D5j0000016Jc9&amp;lastMod=1634288678000&apos;,&apos;&apos;,20,20) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligibility</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

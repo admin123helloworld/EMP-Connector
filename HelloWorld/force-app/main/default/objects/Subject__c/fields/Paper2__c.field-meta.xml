@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paper2__c</fullName>
+    <externalId>false</externalId>
+    <label>Paper2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MATHAMATICS</fullName>
+                <default>false</default>
+                <label>MATHAMATICS</label>
+            </value>
+            <value>
+                <fullName>ENGLISH</fullName>
+                <default>false</default>
+                <label>ENGLISH</label>
+            </value>
+            <value>
+                <fullName>STATISTICS</fullName>
+                <default>false</default>
+                <label>STATISTICS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

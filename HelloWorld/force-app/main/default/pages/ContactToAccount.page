@@ -1,0 +1,18 @@
+<apex:page standardController="Account" extensions="ContactToAccount_cx">
+ <apex:pageBlock title="Account">
+     <apex:pageBlockSection title="Account Contact Record">
+           <apex:pageBlockTable value="{!acclist}" var="objacc">
+             <apex:column value="{!objacc.Name}"/>
+             <apex:column value="{!objacc.Type}"/>
+             <apex:column value="{!objacc.Rating}"/>
+    <apex:column >
+    <apex:repeat value="{!objacc.Contacts}" var="objcon">
+              {!objcon.Name} &nbsp;&nbsp; <br />
+    
+    
+    </apex:repeat>
+     </apex:column>     
+         </apex:pageBlockTable>          
+             </apex:pageBlockSection>
+                 </apex:pageBlock> 
+                    </apex:page>

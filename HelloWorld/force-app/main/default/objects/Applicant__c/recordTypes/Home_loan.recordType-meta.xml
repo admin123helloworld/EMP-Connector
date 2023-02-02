@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_loan</fullName>
+    <active>true</active>
+    <label>Home loan</label>
+    <picklistValues>
+        <picklist>Financer__c</picklist>
+        <values>
+            <fullName>Ghar loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gruh loan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transgender</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Req_Doc_list__c</picklist>
+        <values>
+            <fullName>Aadhar card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAN card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

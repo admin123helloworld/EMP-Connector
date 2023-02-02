@@ -1,0 +1,17 @@
+<apex:page standardController="Flight_schedule__c" extensions="flightWithWithout_cx">
+    <apex:pageBlock title="Flight Schedule">
+        <apex:pageBlockSection title="Flight Schedule Record">
+             <apex:outputPanel >
+             
+               <apex:outputPanel > </apex:outputPanel>
+               
+     <apex:pageBlockTable value="{!flightlist}" var="objflight">
+         <apex:column value="{!objflight.Flight__c}"/>
+         <apex:column value="{!objflight.Source_location_country__c}"/>
+         <apex:column value="{!objflight.Source_location_state__c}"/>
+         <apex:column value="{!objflight.Status__c}"/>
+    </apex:pageBlockTable>
+          </apex:outputPanel>
+        </apex:pageBlockSection>
+  </apex:pageBlock>
+</apex:page>

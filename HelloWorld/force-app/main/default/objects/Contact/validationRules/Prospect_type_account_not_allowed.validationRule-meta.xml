@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_type_account_not_allowed</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Account.Type ,&apos;Prospect&apos;)</errorConditionFormula>
+    <errorMessage>Prospect type record can not be stored in Contact object</errorMessage>
+</ValidationRule>

@@ -1,0 +1,46 @@
+<apex:page standardController="Applicant__c">
+    <apex:form >
+        <apex:pageBlock title="Applicant Record">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="Save"/>
+                <apex:commandButton value="Cancel" action="Cancel"/>
+                  </apex:pageBlockButtons>
+                   <apex:pageBlockSection title="Applicant Basic Information">
+                    <apex:inputField value="{!Applicant__c.First_Name__c}"/>
+                     <apex:inputField value="{!Applicant__c.Last_Name__c}"/>
+                      <apex:inputField value="{!Applicant__c.Aadhar_card_del__c}"/>
+                      <apex:inputField value="{!Applicant__c.Email_ID__c}"/>
+                      <apex:inputField value="{!Applicant__c.Home_loan_amount__c}"/>
+                      <apex:inputField value="{!Applicant__c.Financer__c}"/>
+                      <apex:inputField value="{!Applicant__c.Name}"/>
+                      <apex:inputField value="{!Applicant__c.Personal_Web_Add__c}"/>
+                      <apex:inputField value="{!Applicant__c.Aadhar_Reference_No__c}"/>
+                      <apex:inputField value="{!Applicant__c.Total_balance__c}"/>
+                      <apex:inputField value="{!Applicant__c.Special_symbol_on_body__c}"/>
+                      <apex:inputField value="{!Applicant__c.Middle_Name__c}"/>
+                      <apex:inputField value="{!Applicant__c.Gender__c}"/>
+                      <apex:inputField value="{!Applicant__c.Age__c}"/>
+                      <apex:inputField value="{!Applicant__c.DOB__c}"/>
+                       <apex:inputField value="{!Applicant__c.Police_verification__c}"/>
+                        <apex:inputField value="{!Applicant__c.Eligibility__c}"/>
+                         <apex:inputField value="{!Applicant__c.Eligible_for_voating__c}"/>
+                          <apex:inputField value="{!Applicant__c.Applicant_type__c}"/>
+                    <apex:pageBlockSection title="Applicant Contact document">
+                           <apex:inputField value="{!Applicant__c.Voter_ID__c}"/>
+                            <apex:inputField value="{!Applicant__c.PAN_No__c}"/>
+                            <apex:inputfield value="{!Applicant__c.Mob_No__c}"/>
+                     </apex:pageBlockSection> 
+                         <apex:pageBlockSection title="Applicant other Details">
+                         <apex:inputField value="{!Applicant__c.Req_Doc_list__c}"/>
+                         </apex:pageBlockSection>
+                     
+                   
+                   
+                   
+                   </apex:pageBlockSection>
+            
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

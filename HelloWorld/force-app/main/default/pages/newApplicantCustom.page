@@ -1,0 +1,27 @@
+<apex:page standardController="Applicant__c" extensions="newApplicantCustom_cx">
+<apex:pageMessages ></apex:pageMessages>
+ <apex:form >
+   <apex:pageBlock title="Applicant Information">
+    <apex:pageBlockButtons >
+     <apex:commandButton value="Save" action="{!Save}"/>
+      <apex:commandButton value="Cancel" action="{!Cancel}"/>
+       </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Applicant Basic Information" >
+         <apex:inputField value="{!Applicant__c.First_Name__c}"/>
+          <apex:inputField value="{!Applicant__c.Email_ID__c}"/>
+           <apex:inputField value="{!Applicant__c.Gender__c}"/>
+       
+    
+         </apex:pageBlockSection>
+       </apex:pageBlock>
+
+
+
+</apex:form>
+  
+  
+  
+  
+  
+  
+</apex:page>

@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="count" type="Integer" default="100" />
+<aura:attribute name="salary" type="Decimal" default="30000" />
+<aura:attribute name="firstName" type="String" default="Bunty" />
+<aura:attribute name="lastName" type="String" default="Modi" />
+<aura:attribute name="flag" type="Boolean" default="true" />
+<aura:attribute name="dob" type="Date" default="2000-11-25" />
+<aura:attribute name="mobileNumber" type="Long" default="9978987654" />
+<aura:attribute name="accountId" type="Id" default="0015j00000VG3D4AAL" />
+
+<aura:attribute name="objAcc" type="Account" default="{'sObjectType' : 'Account'}" />
+<aura:attribute name="objContact" type="Contact" default="{'sObjectType' : 'Contact'}" />
+<aura:attribute name="objApplicant" type="Applicant__c" default="{'sObjectType' : 'Applicant__c'}" />
+
+<aura:attribute name="accList" type="List" default="{'Cinemax' , 'Poonam Mall' , 'Eternity Mall'}" />
+<aura:attribute name="accSetName" type="Set" default="{'Cinemax' , 'Poonam Mall' , 'Cinemax'}" />
+<aura:attribute name="accMap" type="Map" default = "{'bunty': 123445 , 'bubli':34344343, 'sheela':23233223}" />
+
+
+<lightning:card title="">
+        Value of count = {!v.count} <br />
+        Salary is = {!v.salary} <br />
+        Full Name = {!v.firstName} &nbsp; {!v.lastName} <br />
+        Flag = {!v.flag} <br />
+        DOB = {!v.dob} <br />
+        Mobile Number = {!v.mobileNumber} <br />
+        Account Id = {!v.accountId} <br />
+
+        Account List = {!v.accList}  <br />
+        Account Set = {!v.accSetName} <br />
+        Account Map = {!v.accMap}
+
+</lightning:card>
+
+
+</aura:component>

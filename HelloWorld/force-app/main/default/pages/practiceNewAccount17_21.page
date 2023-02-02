@@ -1,0 +1,18 @@
+<apex:page standardController="Account" extensions="practiceNewAccount17_21_cx">
+ <apex:form >
+  <apex:pageBlock title="Account">
+    <apex:pageBlockButtons >
+       <apex:commandButton value="Save" action="{!Save}"/>
+       <apex:commandButton value="Cancel" action="{!Cancel}"/>
+      </apex:pageBlockButtons>
+    <apex:pageBlockSection title="Account Record">
+          <apex:inputField value="{!Account.Name}"/>
+          <apex:inputField value="{!Account.Sic}"/>
+          <apex:inputField value="{!Account.Type}"/>
+      
+      
+      
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

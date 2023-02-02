@@ -1,0 +1,22 @@
+<apex:page standardcontroller="Account" extensions="newAccountCustom_cx">
+    <apex:form >
+        <apex:pageBlock title="Account Record">
+            <apex:pageBlockSection title="Account Basic Information">
+                <apex:pageBlockTable value="{!acclist}" var="objacc">
+                    <apex:column value="{!objacc.Name}"/>
+                        <apex:column value="{!objacc.Type}"/>
+                            <apex:column value="{!objacc.Rating}"/>
+                            
+                
+                </apex:pageBlockTable>
+                
+           
+            </apex:pageBlockSection>
+     
+        
+        </apex:pageBlock>
+  
+    </apex:form>
+ 
+  
+</apex:page>

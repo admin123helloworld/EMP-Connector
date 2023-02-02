@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_and_Last_name_should_not_in_char</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+NOT(REGEX(  First_Name__c  , &quot;^[a-zA-Z0_]*$&quot;)),
+NOT(REGEX(   Last_Name__c  , &quot;^[a-zA-Z0_]*$&quot;))
+)</errorConditionFormula>
+    <errorMessage>First and Last name should not contain special char and numbers</errorMessage>
+</ValidationRule>

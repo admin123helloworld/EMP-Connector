@@ -1,0 +1,20 @@
+<apex:page standardController="Account" extensions="AccountToOppo_cx">
+    <apex:pageBlock title="Account">
+        <apex:pageBlockSection title="Account Opportunity Record">
+            
+            <apex:pageBlockTable value="{!acclist}" var="objacc">
+            <apex:column value="{!objacc.Name}"/>
+           <apex:column value="{!objacc.Type}"/> 
+      
+      <apex:column headerValue="SLA"> 
+            <apex:repeat value="{!objacc.Opportunities}" var="objopp">
+           <apex:outputText value="{!objopp.SLA__c}" /> 
+            
+            
+            
+            </apex:repeat>          
+            </apex:column>
+            </apex:pageBlockTable>         
+        </apex:pageBlockSection>
+    </apex:pageBlock> 
+</apex:page>

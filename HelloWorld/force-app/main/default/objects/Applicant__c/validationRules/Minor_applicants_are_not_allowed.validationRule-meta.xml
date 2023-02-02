@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minor_applicants_are_not_allowed</fullName>
+    <active>false</active>
+    <description>Prevent to store data of minor applicants</description>
+    <errorConditionFormula>Age__c &lt;18</errorConditionFormula>
+    <errorDisplayField>DOB__c</errorDisplayField>
+    <errorMessage>Minor applicants are not allowed</errorMessage>
+</ValidationRule>

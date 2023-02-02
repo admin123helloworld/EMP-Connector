@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="firstName" type="string" default="Pinky" />
+    <aura:attribute name="value" type="Integer" default="100"/>
+    <aura:attribute name="Flag" type="Boolean" default="True"/>
+    <aura:attribute name="Amount" type="Decimal" default="10.20"/>
+    <aura:attribute name="DOB" type="Date" default="2020-12-31"/>
+    <aura:attribute name="MobileNo" type="Long" default="989898505060"/>
+    
+    <lightning:card title="">
+        Firsh Name={!v.firstName} <br />   
+        Total value={!v.value} <br />   
+        Flag value={!v.Flag}  <br />
+        Total Amount received={!Amount}  <br />
+        Date of Birth={!v.DOB} <br />
+        Mobile No={!v.MobileNo} <br />
+    
+    </lightning:card>
+
+</aura:component>

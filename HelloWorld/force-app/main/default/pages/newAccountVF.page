@@ -1,0 +1,20 @@
+<apex:page standardController="Account" extensions="newAccountVF_cx"> 
+ <apex:form >
+   <apex:pageBlock title="Account Information">
+     <apex:pageBlockButtons >
+      <apex:commandButton value="Save" action="{!Save}"/>
+       <apex:commandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageBlockButtons>
+         <apex:pageBlockSection title="Account Basic Information">
+          <apex:inputField value="{!Account.Name}"/>
+           <apex:inputField value="{!Account.Type}"/>
+               <apex:inputField value="{!Account.Sic}"/>
+        
+         </apex:pageBlockSection>
+   
+   </apex:pageBlock>
+
+ </apex:form>  
+  
+  
+</apex:page>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_category__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small 1</fullName>
+                <default>false</default>
+                <label>Small 1</label>
+            </value>
+            <value>
+                <fullName>Small 2</fullName>
+                <default>false</default>
+                <label>Small 2</label>
+            </value>
+            <value>
+                <fullName>Small 3</fullName>
+                <default>false</default>
+                <label>Small 3</label>
+            </value>
+            <value>
+                <fullName>Medium 1</fullName>
+                <default>false</default>
+                <label>Medium 1</label>
+            </value>
+            <value>
+                <fullName>Medium 2</fullName>
+                <default>false</default>
+                <label>Medium 2</label>
+            </value>
+            <value>
+                <fullName>Medium 3</fullName>
+                <default>false</default>
+                <label>Medium 3</label>
+            </value>
+            <value>
+                <fullName>Large 1</fullName>
+                <default>false</default>
+                <label>Large 1</label>
+            </value>
+            <value>
+                <fullName>Large 2</fullName>
+                <default>false</default>
+                <label>Large 2</label>
+            </value>
+            <value>
+                <fullName>large 3</fullName>
+                <default>false</default>
+                <label>large 3</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Small</controllingFieldValue>
+            <valueName>Small 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Small</controllingFieldValue>
+            <valueName>Small 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Small</controllingFieldValue>
+            <valueName>Small 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medium</controllingFieldValue>
+            <valueName>Medium 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medium</controllingFieldValue>
+            <valueName>Medium 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medium</controllingFieldValue>
+            <valueName>Medium 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Large</controllingFieldValue>
+            <valueName>Large 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Large</controllingFieldValue>
+            <valueName>Large 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Large</controllingFieldValue>
+            <valueName>large 3</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<apex:page standardController="Contact" recordSetVar="conlist">
+ <apex:form >
+  <apex:pageBlock title="Contact record">
+   <apex:pageBlockSection title="Contact Basic Information">
+     <apex:pageBlockTable value="{!conlist}" var="objcon">
+     
+      <apex:column value="{!objcon.Name}"/>
+      <apex:column value="{!objcon.Level__c}"/>
+      <apex:column value="{!objcon.Account.Name}"/>
+     
+     </apex:pageBlockTable>
+   
+   </apex:pageBlockSection>
+  
+  
+  
+  </apex:pageBlock>
+ 
+ 
+ </apex:form>
+</apex:page>

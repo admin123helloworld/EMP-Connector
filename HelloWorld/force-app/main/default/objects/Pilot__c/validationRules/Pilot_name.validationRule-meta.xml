@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilot_name</fullName>
+    <active>false</active>
+    <errorConditionFormula>Name_of_First_Pilot__c =  00N5j000006ScJ3.00N5j000006SfvS</errorConditionFormula>
+    <errorMessage>Abbb</errorMessage>
+</ValidationRule>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <externalId>false</externalId>
+    <label>City</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>State__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>City</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <controllingFieldValue>Rajasthan</controllingFieldValue>
+            <valueName>Nagpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <controllingFieldValue>Rajasthan</controllingFieldValue>
+            <valueName>Bombay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pakistan state</controllingFieldValue>
+            <controllingFieldValue>Pakistani state</controllingFieldValue>
+            <valueName>Karachi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pakistan state</controllingFieldValue>
+            <controllingFieldValue>Pakistani state</controllingFieldValue>
+            <valueName>Pakistan city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada state</controllingFieldValue>
+            <controllingFieldValue>Canadies state</controllingFieldValue>
+            <valueName>Canada city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada state</controllingFieldValue>
+            <controllingFieldValue>Canadies state</controllingFieldValue>
+            <valueName>Canadies city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denmark state</controllingFieldValue>
+            <controllingFieldValue>Denmark&apos;s state</controllingFieldValue>
+            <valueName>Denmark city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denmark state</controllingFieldValue>
+            <controllingFieldValue>Denmark&apos;s state</controllingFieldValue>
+            <valueName>Denmark&apos;s city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA state</controllingFieldValue>
+            <controllingFieldValue>USA&apos;s state</controllingFieldValue>
+            <valueName>USA city</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA state</controllingFieldValue>
+            <controllingFieldValue>USA&apos;s state</controllingFieldValue>
+            <valueName>USA&apos;s city</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

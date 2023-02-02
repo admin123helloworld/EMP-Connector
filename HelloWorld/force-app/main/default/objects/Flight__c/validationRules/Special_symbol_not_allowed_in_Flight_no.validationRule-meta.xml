@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_symbol_not_allowed_in_Flight_no</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(REGEX(  Flight_Number__c  , &quot;^[a-zA-Z0-9-_]*$&quot;))</errorConditionFormula>
+    <errorDisplayField>Flight_Number__c</errorDisplayField>
+    <errorMessage>Special symbol not allowed in Flight number</errorMessage>
+</ValidationRule>

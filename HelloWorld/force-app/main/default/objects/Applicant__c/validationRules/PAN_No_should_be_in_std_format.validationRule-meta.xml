@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAN_No_should_be_in_std_format</fullName>
+    <active>false</active>
+    <description>Prevent PAN No without std format</description>
+    <errorConditionFormula>NOT(
+regex(PAN_No__c, &quot;[A-Z]{5}[0-9]{4}[A-Z]{1}&quot;)
+
+)</errorConditionFormula>
+    <errorDisplayField>PAN_No__c</errorDisplayField>
+    <errorMessage>PAN No should be in std format</errorMessage>
+</ValidationRule>

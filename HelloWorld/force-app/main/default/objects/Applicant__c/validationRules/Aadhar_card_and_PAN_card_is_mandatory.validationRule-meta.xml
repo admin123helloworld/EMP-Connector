@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aadhar_card_and_PAN_card_is_mandatory</fullName>
+    <active>false</active>
+    <description>Prevent applicants without Aadhar and PAN card</description>
+    <errorConditionFormula>AND (
+
+NOT ( INCLUDES( Req_Doc_list__c , &apos;Aadhar card&apos;)),
+NOT (INCLUDES( Req_Doc_list__c , &apos;PAN card&apos;))
+
+ )</errorConditionFormula>
+    <errorDisplayField>Req_Doc_list__c</errorDisplayField>
+    <errorMessage>Aadhar card and PAN card is required</errorMessage>
+</ValidationRule>

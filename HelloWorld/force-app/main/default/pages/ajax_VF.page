@@ -1,0 +1,22 @@
+<apex:page standardController="Account" extensions="ajax_VF_cx">
+    <apex:form >
+        <apex:pageBlock title="Account">
+            <apex:pageBlockSection title="Account Record">
+            
+                <apex:inputField value="{!Account.Type}">
+                <apex:actionSupport event="onchange" action="{!showRecord}"/>
+                </apex:inputField>
+                
+   <apex:pageBlockTable value="{!acclist}" var="objacc">
+                   <apex:column value="{!objacc.Name}"/>
+                   <apex:column value="{!objacc.Type}"/>
+                   <apex:column value="{!objacc.Rating}"/>
+                   
+   
+   </apex:pageBlockTable>
+               
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

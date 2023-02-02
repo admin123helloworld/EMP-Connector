@@ -1,0 +1,16 @@
+<apex:page standardController="Applicant__c" extensions="withWthout_practice_cx">
+     <apex:pageBlock title="Applicant">
+         <apex:pageBlockSection title="Applicant Record">
+          <apex:outputPanel >
+           <apex:outputPanel >  Total Records = {!totalRecords}  </apex:outputPanel> 
+             <apex:pageBlockTable value="{!applist}" var="objapp">'
+                 <apex:column value="{!objapp.First_Name__c}"/>
+                  <apex:column value="{!objapp.Last_Name__c}"/>
+                   <apex:column value="{!objapp.Gender__c}"/>
+                    <apex:column value="{!objapp.Age__c}"/>
+                     <apex:column value="{!objapp.DOB__c}"/>
+                      </apex:pageBlockTable> 
+              </apex:outputPanel>                 
+         </apex:pageBlockSection>
+     </apex:pageBlock>
+</apex:page>

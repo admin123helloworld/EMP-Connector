@@ -1,0 +1,18 @@
+<apex:page standardController="Applicant__c" extensions="ApplicantToAddress_cx">
+ <apex:pageBlock title="Applicant">
+     <apex:pageBlockSection title="Applicant Address record">   
+         <apex:pageBlockTable value="{!applist}" var="objapp">
+         <apex:column value="{!objapp.First_Name__c}"/>
+         <apex:column value="{!objapp.Last_Name__c}"/>
+         
+    <apex:column headerValue="City of Address" >
+        <apex:repeat value="{!objapp.Addresses__r}" var="objadd">
+        {!objadd.City__c}
+        
+        
+        </apex:repeat>   
+    </apex:column>           
+         </apex:pageBlockTable>
+     </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:page>
